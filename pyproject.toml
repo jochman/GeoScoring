@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "parse_gis"
+version = "0.1.0"
+description = ""
+authors = ["Jochman <ilnest.bar@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+numpy = "^2.1.0"
+geopandas = "^1.0.1"
+tk = "^0.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pandas-stubs = "^2.2.2.240807"
+ruff = "^0.6.2"
+mypy = "^1.11.2"
+setuptools = "^74.0.0"
+
+[tool.poetry.scripts]
+score_gis = 'parse_gis:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
